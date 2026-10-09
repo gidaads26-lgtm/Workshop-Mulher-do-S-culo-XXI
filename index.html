@@ -146,6 +146,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .quem-quote>svg{display:none}
     .quem-insta{display:flex!important;width:fit-content;margin-inline:auto}
   }
+
+  /* Computador: foto do topo como retrato emoldurado, proporcional ao texto (celular não muda) */
+  @media (min-width:1024px){
+    .hero-photo{position:absolute!important;top:6rem!important;bottom:auto!important;
+      right:max(3rem,calc((100vw - 72rem)/2 + 3rem))!important;left:auto!important;
+      width:min(32vw,420px)!important;height:auto!important;aspect-ratio:4/5;
+      border-radius:2rem;overflow:hidden;
+      -webkit-mask-image:none!important;mask-image:none!important;
+      outline:1px solid rgba(201,164,92,.55);outline-offset:12px;
+      box-shadow:0 40px 80px -30px rgba(0,0,0,.65),0 0 0 1px rgba(228,172,207,.18)}
+    .hero-photo img{height:100%!important;width:100%!important;transform:none!important;
+      object-position:50% 42%!important;scale:1.12;transform-origin:50% 38%}
+  }
 </style>
   </head>
   <body>
