@@ -8,6 +8,7 @@ Ao vivo em 03/11/2026, às 20h, via Zoom.
 | Arquivo | O que é |
 |---|---|
 | `index.html` | O site completo em um único arquivo (código, estilos e fotos embutidos). |
+| `og-workshop.jpg` | Imagem de compartilhamento (WhatsApp, Instagram, Facebook), 1200x630. |
 | `planilha/Codigo.gs` | Script da Planilha Google que recebe as inscrições. |
 | `vercel.json` | Cabeçalhos de segurança aplicados pela Vercel. |
 | `_headers` | Os mesmos cabeçalhos, para o caso de publicar no Netlify. |
