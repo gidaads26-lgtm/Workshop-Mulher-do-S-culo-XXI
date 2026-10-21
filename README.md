@@ -30,6 +30,15 @@ No topo do `index.html` fica o bloco de configuração:
 - `sheetUrl`: endereço da Planilha Google. Só links `https://script.google.com/macros/s/.../exec` são aceitos.
   Se ficar vazio, o site tenta o formulário do Netlify, que **não funciona na Vercel**.
 
+## Pixel da Meta
+
+O pixel `28940118022287582` está no `<head>` do `index.html`. Eventos enviados:
+
+- **PageView**: ao abrir a página.
+- **Lead**: quando a pessoa envia nome e WhatsApp (use como conversão nas campanhas).
+
+Os dados pessoais (nome e WhatsApp) **não** são enviados à Meta. Se trocar de pixel, substitua o número nas duas ocorrências do bloco "Meta Pixel Code".
+
 ## 1. Criar a Planilha Google (uma vez só, cerca de 5 minutos)
 
 1. Acesse [sheets.new](https://sheets.new) com a conta Google que vai guardar as inscrições e dê um nome à planilha.
