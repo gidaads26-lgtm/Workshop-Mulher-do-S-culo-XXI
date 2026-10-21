@@ -30,14 +30,24 @@ No topo do `index.html` fica o bloco de configuração:
 - `sheetUrl`: endereço da Planilha Google. Só links `https://script.google.com/macros/s/.../exec` são aceitos.
   Se ficar vazio, o site tenta o formulário do Netlify, que **não funciona na Vercel**.
 
-## Pixel da Meta
+## Pixel da Meta e API de Conversões
 
-O pixel `2049925319002692` está no `<head>` do `index.html`. Eventos enviados:
+O pixel `2049925319002692` está no `<head>` do `index.html`. Eventos enviados pelo navegador:
 
 - **PageView**: ao abrir a página.
 - **Lead**: quando a pessoa envia nome e WhatsApp (use como conversão nas campanhas).
 
-Os dados pessoais (nome e WhatsApp) **não** são enviados à Meta. Se trocar de pixel, substitua o número nas duas ocorrências do bloco "Meta Pixel Code".
+A **API de Conversões** envia o mesmo **Lead** a partir do script da planilha (`planilha/Codigo.gs`),
+com o WhatsApp e o primeiro nome **codificados em SHA-256**. Pixel e API usam o mesmo `event_id`,
+então a Meta não conta a mesma inscrição duas vezes.
+
+Para ativar: no Apps Script, **Configurações do projeto → Propriedades do script**, crie `META_TOKEN`
+com o token gerado no Gerenciador de Eventos. **O token fica só no Apps Script; nunca no site nem neste repositório.**
+Para testar, crie também `META_TEST_CODE` (código de "Testar eventos"), rode a função `testarMeta`
+e depois **apague** `META_TEST_CODE` (com ela, os eventos ficam só no modo de teste).
+
+Se trocar de pixel, substitua o número no bloco "Meta Pixel Code" do `index.html` (duas ocorrências)
+e em `META_PIXEL_ID` no script.
 
 ## 1. Criar a Planilha Google (uma vez só, cerca de 5 minutos)
 
