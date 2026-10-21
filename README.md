@@ -32,7 +32,7 @@ No topo do `index.html` fica o bloco de configuração:
 
 ## Pixel da Meta e API de Conversões
 
-O pixel `2049925319002692` está no `<head>` do `index.html`. Eventos enviados pelo navegador:
+O pixel `939323018973642` está no `<head>` do `index.html`. Eventos enviados pelo navegador:
 
 - **PageView**: ao abrir a página.
 - **Lead**: quando a pessoa envia nome e WhatsApp (use como conversão nas campanhas).

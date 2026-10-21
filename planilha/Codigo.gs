@@ -24,7 +24,7 @@ var CABECALHO = [
 ];
 var UTMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
 var JANELA_DUPLICADA_SEG = 600; // ignora o mesmo WhatsApp repetido em 10 minutos
-var META_PIXEL_ID = '2049925319002692';
+var META_PIXEL_ID = '939323018973642';
 var META_API = 'https://graph.facebook.com/v25.0/';
 var META_EVENTO = 'Workshop Mulher do Século XXI';
 var SITE_PADRAO = 'https://solangebcgodoy.com.br/';
