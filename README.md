@@ -1,7 +1,7 @@
 # Workshop Mulher do Século XXI
 
 Página de captura do workshop online e gratuito com **Solange Godoy**, hipnoterapeuta clínica.
-Ao vivo em 03/11/2026, às 20h, via Zoom.
+Ao vivo em 10/11/2026, às 20h, via Zoom.
 
 ## Arquivos
 
